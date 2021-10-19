@@ -76,7 +76,7 @@ class AuthUserService {
         }
         )
 
-        return response.data;
+        return { token, user };
     }
 }
 export { AuthUserService }
