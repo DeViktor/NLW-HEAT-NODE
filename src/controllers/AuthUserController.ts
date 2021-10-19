@@ -13,4 +13,4 @@ class AuthUserController {
     }
 }
 
-export { AuthUserController };
+export { AuthUserController }

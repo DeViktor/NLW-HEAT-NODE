@@ -10,7 +10,8 @@ import axios from "axios";
 
 class AuthUserService {
     async exe(code: string) {
-        const url = "https://github.com/login/oauth/acess_token";
+
+        const url = "https://github.com/login/oauth/access_token";
 
         const response = await axios.post(url, null, {
             params: {
@@ -25,4 +26,4 @@ class AuthUserService {
         return response.data;
     }
 }
-export { AuthUserService };
+export { AuthUserService }
