@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "prisma": "^3.2.1",
     "ts-node-dev": "^1.1.8",
     "typerscript": "^0.2.3"
   },
