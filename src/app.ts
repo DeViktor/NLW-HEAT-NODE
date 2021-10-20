@@ -1,10 +1,16 @@
 import "dotenv/config";
 import express from "express";
+import http from "http";
+import { Server } from "socket.io";
+
 
 import { router } from "./routes";
 
 const app = express();
 
+const serverHTTP = http.createServer(app);
+
+const io = new Server(serverHTTP);
 
 app.use(express.json());
 
