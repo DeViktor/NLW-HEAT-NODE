@@ -19,6 +19,10 @@ const io = new Server(serverHTTP, {
     }
 });
 
+io.on("connection", (socket) => {
+    console.log(`user connected ${socket.id} `);
+})
+
 app.use(express.json());
 
 app.use(router);
@@ -34,4 +38,4 @@ app.get('/singin/callback', (request, response) => {
     return response.json(code);
 });
 
-app.listen(4000, () => console.log(`server is running on port 4000`));
+export { serverHTTP, io };
